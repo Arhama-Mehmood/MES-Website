@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/mes_logo-removebg-preview.png" type="image/x-icon">
+
+    <!-- JS Link -->
+    <script src="app.js"></script>
+
+    <!-- Firebase Link -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/database-app.js"></script>
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap Css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icon cdn Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <!-- Google Font Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .carousel-control-prev,
+        .carousel-control-next {
+            z-index: 10;
+        }
+    </style>
+
+    <!-- Title -->
+    <title>Millennium's Education System</title>
+</head>
+
+<body>
+    <div class="upper-div shadow">
+        <div class="top-inner-div mb-3">
+            <ul class="list-unstyled d-flex justify-content-end me-5">
+                <li class="text-white me-5 "><i class="bi bi-telephone text-white"></i> +92-3452845689</li>
+                <li class="text-white top-email "><i class="bi bi-envelope"></i> millenniumseducation@yahoo.com</li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg p-0  ">
+        <div class="container-fluid ">
+            <a class="navbar-brand  " href="#">
+                <div class="d-flex"><img src="./images/mes_logo-removebg-preview.png"
+                        class="logo ms-lg-5 ms-sm-0 mt-lg-2 mt-sm-0" alt="School Logo">
+                    <p class="ms-2 school-name fs-lg-5 fs-sm-2">Millennium's <br> Education System</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active p-2" aria-current="page" href="index.html" target="_blank">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-black p-2" href="#Programs">PROGRAMS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black p-2" href="messageus.html">MESSAGE US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black p-2" href="aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black pe-5 p-2" href="contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay"></div>
+                <img src="./images/school-complete.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption ">
+                    <h2 class="heading1">Welcome to <br> Best educations</h2>
+                    <h1 class="heading2">SCHOOL</h1>
+                    <h4>Serving the nation with quality education at affordable fees!</h4>
+                    <button class="contact-button">Contact Us</button>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <div class="overlay"></div>
+                <img src="./images/school-complete2.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="heading1">Welcome to <br> Best educations</h2>
+                    <h1 class="heading2">SCHOOL</h1>
+                    <h4>Serving the nation with quality education at affordable fees!</h4>
+                    <button class="contact-button">Contact Us</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="./images/school-complete3.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="heading1">Welcome to <br> Best educations</h2>
+                    <h1 class="heading2">SCHOOL</h1>
+                    <h4>Serving the nation with quality education at affordable fees!</h4>
+                    <button class="contact-button">Contact Us</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="./images/school-complete4.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="heading1">Welcome to <br> Best educations</h2>
+                    <h1 class="heading2">SCHOOL</h1>
+                    <h4>Serving the nation with quality education at affordable fees!</h4>
+                    <button class="contact-button">Contact Us</button>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="./images/school-complete6.jfif" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h2 class="heading1">Welcome to <br> Best educations</h2>
+                    <h1 class="heading2">SCHOOL</h1>
+                    <h4>Serving the nation with quality education at affordable fees!</h4>
+                    <button class="contact-button">Contact Us</button>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Body Section 1 Start -->
+    <div class="container">
+        <div class="section-padding">
+            <div class="row d-sm-flex flex-column-reverse flex-lg-row ">
+                <div class="col-lg-5 col-sm-12 ">
+                    <h2 class="pb-3 fw-bold heading">Step into World <br>of Learning</h2>
+                    <p class="text-secondary para lh-md fs-5">Education is the key to unlocking the world, a passport to
+                        freedom and a gateway to brighter future. <strong>At MES,</strong> we empower students to
+                        explore, discover, and
+                        grow, fostering a love for learning that lasts a lifetime.</p><br>
+                    <p><a href="#" class="btn btn-warning p-2 ps-4 pe-4 my-button"> Our Misssion</a></p>
+                </div>
+                <div class=" col-lg-6 col-sm-12">
+                    <video src="./images/WhatsApp Video 2025-04-30 at 12.56.40 PM.mp4" class="img-fluid" controls
+                        autoplay loop muted></video><br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body Section 1 End -->
+
+    <!-- Card Section Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <div class="card1 border-0">
+                    <div class="card-body">
+                        <img src="./images/Classroom.png" width="40%" alt=""><br><br><br>
+                        <h4>Modern Classrooms</h4>
+                        <p>Modern classrooms with cutting-edge technology for enhanced learning.
+                        </p>
+                        <p><a href="#" class="btn btn-white text-info my-button">PART OF OUR MISSION <span><i
+                                        class="bi bi-arrow-right-short text-info"></i></span></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card1 border-0">
+                    <div class="card-body">
+                        <img src="./images/faculty-removebg-preview.png" width="70%" alt=""><br><br>
+                        <h4>Experienced Faculty</h4>
+                        <p>Experienced faculty with passion for teaching and mentoring students effectively always.
+                        </p>
+                        <p><a href="#" class="btn btn-white text-info my-button">PART OF OUR MISSION <span><i
+                                        class="bi bi-arrow-right-short text-info"></i></span></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card1 border-0">
+                    <div class="card-body">
+                        <img src="./images/paiting.png" width="40%" alt=""><br><br><br>
+                        <h4>Extracurricular Activities
+                        </h4>
+                        <p>Students showcase their artistic talents on <strong>Art's Day,</strong> creating stunning
+                            artworks.
+                        </p>
+                        <p><a href="#" class="btn btn-white text-info my-button">PART OF OUR MISSION <span><i
+                                        class="bi bi-arrow-right-short text-info"></i></span></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <div class="card1 border-0">
+                    <div class="card-body">
+                        <img src="./images/building-removebg-preview.png" width="55%" alt=""><br>
+                        <h4>Safe Environmnet</h4>
+                        <p>Our school provides a nurturing environmnet where students feel safe and supported.
+                        </p>
+                        <p><a href="#" class="btn btn-white text-info my-button"> PART OF OUR MISSION <span><i
+                                        class="bi bi-arrow-right-short text-info"></i></span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br>
+
+    <!-- Second-Div-Start -->
+
+    <div class="container3 col-lg-12 col-sm-12 d-lg-flex">
+        <div class="col-lg-5 col-sm-4 ms-lg-5 ms-sm-3 mb-sm-4">
+            <img src="./images/mission_vision-removebg-preview.png" class="img-fluid" alt="image2">
+        </div>
+        <div class="paragraph2 col-sm-5 col-lg-6 ms-4">
+            <h1 class="heading fw-bold">Mission And Vision <br> Behind Our School</h1><br>
+            <p class="p1">Our mission is to provide a nurturing, inclusive, and intellectually stimulating
+                environment
+                where every child is encouraged to discover their true potential. We are committed to delivering
+                high-quality education that emphasizes academic excellence, character development, and the
+                cultivation
+                of curiosity. Through a well-rounded curriculum and supportive mentorship, we aim to shape
+                confident,
+                compassionate individuals who are prepared to meet the challenges of a rapidly changing world.
+                We
+                believe that education is not just about learning facts but about developing the ability to
+                think
+                critically, act ethically, and contribute meaningfully to society. <br><br>Our vision is to be
+                recognized as a premier institution that inspires young minds to dream big, think creatively,
+                and lead
+                with purpose. We aspire to create a future where every student from our school becomes a
+                proactive,
+                thoughtful, and capable leader in their chosen field. By fostering innovation, embracing
+                diversity, and
+                promoting global awareness, we envision an educational experience that not only prepares
+                students for
+                academic success but also empowers them to be agents of positive change in their communities and
+                beyond.
+                We see our school as a beacon of lifelong learning, moral integrity, and holistic growth.
+
+            </p>
+        </div>
+    </div>
+
+    <br><br><br>
+    <!-- Second-Div-End -->
+
+    <!-- Card Section End -->
+
+    <!-- Body Section 4 Start -->
+    <div class="bg-light">
+        <div class="container">
+            <div class="section-padding">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12 ">
+                        <img src="./images/logo icon.jfif" class="img-fluid">
+                    </div>
+                    <div class="col-lg-5 col-sm-12">
+                        <h2 class="fw-5 pt-2 pb-3 fw-bold heading">Why Parents Trust Us?</h2>
+                        <p class="text-secondary fs-5 ">At our school, we believe that every child deserves a
+                            nurturing and inspiring environment to thrive. Parents trust us because we consistently
+                            deliver quality education, promote strong moral values, and maintain open, honest
+                            communication with families. Our dedicated teachers, safe campus, and focus on both
+                            academics and character development make us a dependable choice for your child’s future.
+                            We encourage parental involvement and value their feedback as partners in education. Our
+                            proven track record of student success speaks for the trust we’ve earned over the years.</p>
+
+                        <div class="container">
+                            <div class="row">
+                                <div
+                                    class="col-lg-6 col-sm-12 d-flex justify-content-lg-around justify-content-sm-center grid-item  ">
+                                    <img src="./images/professor.png" alt="">
+                                    <div>
+
+                                        <h1 class="text-warning">1200+</h1>
+                                        <h5 class="text-secondary">STUDENTS</h5>
+                                    </div>
+                                </div>
+                                <div
+                                    class="col-lg-6 col-sm-12 d-flex justify-content-lg-around justify-content-sm-center grid-item ">
+                                    <img src="./images/graduate icon.png" alt="">
+                                    <div>
+                                        <h1 class="text-warning">1000+</h1>
+                                        <h5 class="text-secondary">MATRICULANT</h5>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Body Section 4 End -->
+
+            <!-- Card Section 2 Start -->
+
+            <div class="container">
+                <div id="Programs">
+                    <div class="text-center">
+                        <h2 class="fw-bold heading">Our Core Programs</h2>
+                        <p class="fs-4 "> We offer a structured and holistic education from early years to 10th grade,
+                            fostering academic excellence and character development.
+                        <p><a href="#" class="btn btn-warning p-2 ps-4 pe-4 text-white my-button">
+                                <span><i class="bi bi-book"></i></span>
+                                Enroll Now</a></p><br><br><br>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12 margin">
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <img src="./images/students2.jfif" class="img-fluid" alt=""><br><br>
+
+                                        <h3 class="fw-bold mb-5" style="color:#002B5B;">Early Years (Nursery to Prep-II)
+                                        </h3>
+                                        <p class="lh-lg mb-4 text-justify text-secondary">We provide a nurturing and
+                                            playful environment where children begin their learning journey with
+                                            curiosity and joy.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-sm-12 margin">
+                                <div class="card border-0 ">
+                                    <div class="card-body ">
+                                        <img src="./images/students.jfif" class="img-fluid" alt=""><br><br>
+                                        <h3 class="fw-bold mb-4" style="color:#002B5B;">Primary Level (Grades 1 to
+                                            Grades 5)</h3>
+                                        <p class="lh-lg mb-4 text-justify text-secondary">A strong focus on foundational
+                                            subjects such as English, Mathematics, Science, and moral education, all
+                                            while encouraging creativity.</p>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-4 col-sm-12 margin">
+                                <div class="card border-0 ">
+                                    <div class="card-body">
+                                        <img src="./images/elderstudents.jfif" class="img-fluid" alt=""><br><br>
+                                        <h3 class="fw-bold mb-4" style="color:#002B5B;">Middle to Matric (Grades 6 to
+                                            10)</h3>
+                                        <p class="lh-lg mb-4 text-justify text-secondary">Structured academic
+                                            preparation with a focus on board examination success, leadership skills,
+                                            and co-curricular involvement.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Card Section 2 End -->
+
+    <!-- Card Section 3 Start -->
+    <div class="container text-center section-padding">
+        <h2 class="fw-bold heading mt-4">Meet Our Dedicated Faculty</h2>
+        <p class="text-secondary fs-4"> Our faculty members bring commitment, experience, and compassion to every
+            classroom—ensuring a strong academic foundation and a nurturing environment for every student.</p><br><br>
+
+        <div class="container section-padding">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 margin">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="fs-5 fw-light fst-italic lh-lg">“As the Principal, I believe in creating an
+                                inspiring environment where every student is encouraged to
+                                excel. Education is the foundation of a successful future, and I am committed to guiding
+                                students to reach their potential, both academically and personally.”
+
+                            </p><br><br>
+                            <div class="status">
+                                <img src="./images/principal.jfif" alt="principal">
+                                <div>
+                                    <p class="name text-black fw-medium">Sir Muhammad Naqi</p>
+                                    <p class="expert text-black fw-medium">Principal</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 margin">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="fs-5 fst-italic fw-light lh-lg"> “As the Primary Incharge, I believe in creating
+                                a
+                                nurturing and structured environment that encourages children to explore, learn, and
+                                grow. My goal is to ensure that every child feels valued during their
+                                formative years, laying the groundwork for future success.”
+                            </p><br><br>
+                            <div class="status">
+                                <img src="./images/teacher2.png" alt="Girl">
+                                <div>
+                                    <p class="name text-black fw-medium">Miss Ghazala</p>
+                                    <p class="expert text-black fw-medium">Primary Section Incharge</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12 ">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="fs-5 fst-italic fw-light lh-lg">“As the Secondary Incharge, I focus on fostering
+                                an
+                                environment where students feel empowered to reach their full potential. I am committed
+                                to guiding them through their academic journey and preparing them for the challenges
+                                ahead.”
+
+                            </p><br><br>
+                            <div class="status">
+                                <img src="./images/teacher.png" alt="Girl">
+                                <div>
+                                    <p class="name text-black fw-medium"> Miss Shahida</p>
+                                    <p class="expert text-black fw-medium"> Secondary Section Incharge</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Card Section 3 End -->
+
+    <!-- Blog Section Start -->
+    <div class="bg-light">
+        <div class="blog-maindiv">
+            <div class="text-center">
+                <div class="section-padding">
+                    <div>
+                        <h2 class="fw-bold heading">School News & Highlights</h2>
+                        <p class="text-secondary fs-4"> Stay updated with recent activities, celebrations, and memorable
+                            moments happening across our school campus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="card mb-5 ">
+                            <!-- <div class="card-body"> -->
+                            <img src="./images/prizeDistribution.jfif" class="img-fluid mb-4" alt="">
+                            <p class="fs-5 me-3 ms-3 mb-4">ANNUAL DAY - A Celebration of Talent, Unity, and Success.
+                            </p>
+                            <div class="ms-3 mb-4">
+                                <p class="text-body-tertiary para3"><span><i class="bi bi-calendar"></i></span>
+                                    Apr ,
+                                    2025 &nbsp;
+                                    <span><i class="bi bi-person"></i></span> Admin &nbsp; <span><i
+                                            class="bi bi-chat-fill"></i> 19</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="blog-second-col">
+                            <div class="col-3">
+                                <img src="./images/school-complete6.jfif " class="img-fluid shadow-lg mb-2" alt="">
+                            </div>
+                            <div class="col-9">
+                                <p class="fs-5 ms-3">A fun area where students can play, leran and esplore through
+                                    interactive games, toys,fostering imaginations and creative activities.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="blog-second-col">
+                            <div class="col-3">
+                                <img src="./images/Robotics.jfif" class="img-fluid shadow-lg mb-2 h-100" alt="">
+                            </div>
+                            <div class="col-9">
+                                <p class="fs-5 ms-3">ROBOTICS - Where curiositymeets innovation, mpowering young minds
+                                    to code, create and shape the future.
+                                </p>
+                            </div>
+                        </div><br>
+                        <div class="blog-second-col">
+                            <div class="col-3">
+                                <img src="./images/classRoominaugration.jfif" class="img-fluid shadow-lg mb-2 h-100"
+                                    alt="">
+                            </div>
+                            <div class="col-9">
+                                <p class="fs-5 ms-3 ">Welcome to our newly inaugrated classrom, where knowledge meets
+                                    innovation and learning knows no bounds!</p>
+                            </div>
+                        </div><br>
+                        <div class="blog-second-col">
+                            <div class="col-3">
+                                <img src="./images/Art Day.jfif" class="img-fluid shadow-lg mb-2" alt="">
+                            </div>
+                            <div class="col-9">
+                                <p class="fs-5 ms-3">OUR annual Art Day is a celebration of creativity, where
+                                    imagination shines through artistry.
+                                </p>
+                            </div>
+                        </div><br>
+
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- Blog Section End -->
+
+    <!-- Footer Start -->
+    <div class="pt-4" style="background-color: #002B5B;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-sm-12">
+                    <h3 class="text-white mt-3">Have Questions? We're Here to Help</h3>
+                    <p class="text-white lh-lg fw-light mb-5">
+                        Reach out to us for admission inquiries, school timings, or any other questions you may have.
+                        You can come on school timing at our school's reception.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section-padding2">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 ">
+                <h3 class="fw-light fs-1">Millennium's Education System</h3>
+                <p class="text-secondary mb-5">MES is a comprehensive learning framework that caters to students from
+                    early years to matriciculation.</p>
+            </div>
+            <div class="col-lg-2 col-sm-12">
+                <h4 class="fw-light ms-lg-5 ms-sm-0">Quick Link</h4>
+                <br>
+                <div class="d-lg-flex d-sm-inline ms-lg-5 ms-sm-0 main-ul">
+                    <div>
+                        <ul class="p-0">
+                            <li><a href="#" class="text-info">Home</a></li>
+                            <li><a href="#" class="text-info">About us</a></li>
+                            <li><a href="#" class="text-info">Pages</a></li>
+                            <li><a href="#" class="text-info">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="p-0 mb-5">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-12">
+                <h4 class="fw-light ms-lg-5 ms-sm-0">Helpful details</h4>
+                <br>
+                <div class="d-lg-flex d-sm-inline ms-lg-5 ms-sm-0 main-ul">
+                    <div>
+                        <ul class="p-0">
+                            <li><a class="text-info text-decoration-none">Admission Policy</a></li>
+                            <li><a class="text-info text-decoration-none">Code of Conduct</a></li>
+                            <li><a class="text-info text-decoration-none">Fee Structure</a></li>
+                            <li><a class="text-info text-decoration-none">School Uniform</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="p-0 mb-5">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-12 ">
+                <h4 class="fw-light ms-lg-5 ms-sm-0">Contact Information</h4><br>
+                <div class="ms-lg-5 ms-sm-0">
+                    <p><span><i class="bi bi-geo-alt-fill text-secondary"></i></span> &nbsp;&nbsp; Plot# 702, 703, 704 &
+                        705
+                        Street 01, Sheet 1, Shah wali ullah nagar, Orangi town, Karachi.
+                        <br>
+                    </p><br>
+                    <p class="text-info"><span><i class="bi bi-telephone text-secondary"></i></span> &nbsp;&nbsp;+92
+                        3452845689</p><br>
+                    <p class="text-info"><span><i class="bi bi-envelope text-secondary "></i></span>
+                        <a href=" millenniumseducation@yahoo.com"
+                            class="text-info text-decoration-none">millenniumseducation@yahoo.com</a>
+                    </p><br>
+                    <p><span><i class="bi bi-clock text-secondary"></i></span> &nbsp;&nbsp;&nbsp;Monday — Saturday
+                        8:00am
+                        -
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5:00pm </p><br>
+                </div>
+
+            </div>
+        </div>
+    </div><br><br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 ms-lg-5 ms-sm-0">
+                <p class="text-secondary">Copyright ©2025 All rights reserved | This website is made with by <span><i
+                            class="bi bi-suit-heart-fill text-secondary"></i></span>
+                    <a href="#" class="text-info text-decoration-none">ARHAMA MEHMOOD</a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-sm-12 ms-lg-auto ms-sm-4 text-sm-center ">
+                <span><a href="https://www.facebook.com/millenniumseducationsystem" target="_blank"><i
+                            class="bi bi-facebook text-info"></i></a></span> &nbsp;<span><i
+                        class="bi bi-twitter text-info"></i></span> &nbsp;<span><i
+                        class="bi bi-linkedin text-info"></i></span><span> &nbsp;<i
+                        class="bi bi-instagram text-info"></i></span>
+            </div>
+        </div>
+    </div><br><br><br>
+    <!-- Footer End -->
+
+    <!-- JavaScript Link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</htm

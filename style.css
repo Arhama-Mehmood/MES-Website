@@ -1,0 +1,483 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-padding3 {
+    padding: 60px 0px 170px 0px;
+
+}
+
+.top-inner-div {
+    padding: 15px;
+}
+
+.logo {
+    width: 100px;
+    height: 20%;
+}
+
+.upper-div {
+    background-color: #002B5B;
+    height: 60px;
+}
+
+/* Default color for all links */
+.navbar .nav-link {
+    color: black !important;
+    transition: 0.3s;
+  }
+  
+  /* Hover effect for all links */
+  .navbar .nav-link:hover,
+  .navbar .nav-link.active:hover {
+    color:#2167b7 !important; 
+    border-radius: 5px;
+    background-color: #e6e1e1;
+    border-radius: 5px; 
+  }
+
+.school-name {
+    font-weight: bold;
+    color: rgb(25, 44, 113);
+    margin-top: 10px;
+}
+
+.sendbtn {
+    background-color: #002B5B;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.heading1 {
+    font-size: 40px;
+}
+
+.heading2 {
+    font-size: 60px;
+    color: #ffc107;
+    font-weight: 1000;
+}
+
+/* For Carousel */
+.carousel-item {
+    position: relative;
+    height: 100%;
+    /* ensure it uses full height */
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+.carousel-item img {
+    height: 600px;
+    /* Default desktop height */
+    width: 100%;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adjust to control darkness */
+    z-index: 1;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+}
+
+
+/* Carousel end */
+.para1 {
+    font-size: large;
+}
+
+.contact-button {
+    font-size: large;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    border: none;
+    background-color: #ffc107;
+    ;
+}
+
+.section-padding2 {
+    padding: 100px 0 0 0;
+}
+
+.parent2 {
+    display: flex;
+}
+
+.navbar-brand {
+    position: relative;
+    left: 100px;
+}
+
+
+.login-link {
+    text-decoration: none;
+    margin: 0px 150px 0px 90px;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.dropdown-menu {
+    box-shadow: 0 0 30px gray;
+}
+
+.carousel-caption {
+    position: relative;
+    top: 150px;
+}
+
+.d-block {
+    height: 700px;
+    width: 100%;
+}
+
+.heading {
+    font-size: 50px;
+    color: #002B5B;
+    font-weight: 100;
+}
+
+.margin {
+    margin-bottom: 30px;
+}
+
+.filter-container {
+    gap: 30px;
+    padding: 5px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+
+.filter-container input {
+    width: 200px;
+    padding: 15px 0 15px 0;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+
+.filter-container .my-button:hover {
+    color: black !important;
+    border: 2px solid rgb(32, 154, 182) !important;
+    background-color: white !important;
+}
+
+.dropdown1 {
+    outline: none;
+    background-color: white;
+}
+
+.my-button:hover {
+    color: black !important;
+    border: 2px solid rgb(32, 154, 182) !important;
+    background-color: white !important;
+}
+
+.grid-item {
+    border: none;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.grid-item img {
+    width: 50px;
+    height: 70px;
+
+}
+
+.number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.box {
+    display: flex;
+}
+
+.card {
+    box-shadow: 0px 0px 40px rgb(192, 189, 189);
+}
+
+.status {
+    margin: 10px 0px 10px 10px;
+    display: flex;
+}
+
+.status img {
+    width: 10%;
+    height: 40px;
+    border-radius: 140px;
+    margin: 0 15px 0 0;
+}
+
+.status div {
+    margin-left: 0;
+}
+
+.name {
+    margin: 0;
+    color: gray;
+}
+
+.expert {
+    color: gray;
+    font-size: small;
+}
+
+.blog-second-col {
+    display: flex;
+}
+
+.para3 {
+    font-size: smaller;
+}
+
+.blog-maindiv {
+    padding-bottom: 50px;
+}
+
+.input-email {
+    width: 70%;
+    outline: none;
+}
+
+.main-ul div ul {
+    list-style-type: none;
+}
+
+.main-ul div ul li a {
+    text-decoration: none;
+
+}
+
+.main-ul div ul li a:hover {
+    color: rgb(15, 22, 24);
+}
+
+/* ABOUT US PAGE START */
+.about-div {
+    background-color: #002B5B;
+    height: auto;
+}
+
+.about-head {
+    padding: 60px 60px 0px 60px;
+    margin-left: 5%;
+    font-size: 80px;
+    color: white;
+}
+
+.head4 {
+    color: #ffc107;
+    margin-left: 9%;
+    padding-bottom: 30px;
+}
+
+/* Third-Div-Start */
+.sir-naqi {
+    width: 20%;
+    margin: 30px 0px 20px 600px;
+    border-radius: 1000px;
+}
+
+.div {
+    box-shadow: 5px 5px 10px rgb(154, 151, 151);
+    margin-bottom: 50px;
+}
+
+.hr {
+    width: 50px;
+    margin-left: 720px;
+    border: 3px solid rgb(103, 103, 151);
+    border-radius: 5px;
+}
+
+.name1 {
+    color: #002B5B;
+    text-align: center;
+    font-size: 50px;
+}
+
+.p3 {
+    width: 70%;
+}
+
+.p2 {
+    color: #ffc107;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.p3>p {
+    color: gray;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 410px;
+    font-size: large;
+}
+
+/* Third-Div-End */
+
+
+/* ABOUT US PAGE END */
+
+
+@media only screen and (max-width: 480px) {
+    .top-inner-div li {
+        font-size: 13px;
+    }
+
+    .top-inner-div ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* About section start */
+
+    .about-div {
+        height: auto;
+    }
+
+    .about-head {
+        padding: 60px 60px 0px 50px;
+        margin-left: 0%;
+        font-size: 40px;
+        color: white;
+    }
+
+    .head4 {
+        margin-left: 12%;
+        font-size: 15px;
+    }
+
+
+    /* Main content */
+    .sir-naqi {
+        width: 50%;
+        margin: 0px 0px 10px 80px;
+    }
+
+    .hr {
+        width: 35px;
+        margin-left: 145px;
+    }
+
+    .name1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 25px;
+    }
+
+    .div>.p3 {
+        width: 100%;
+        height: 50px;
+    }
+
+    .div>.p2 {
+        text-align: center;
+        font-size: small;
+    }
+
+    .p3>p {
+        text-align: center;
+        margin: 10px 20px 0px 0px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* About section end     */
+
+}
+
+.navbar-brand {
+    position: static;
+    left: 0px;
+}
+
+.logo {
+    width: 80px;
+    height: 10%;
+    margin-left: 0px;
+}
+
+.school-name {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.d-block {
+    width: 100%;
+
+}
+
+.carousel-caption {
+    width: 80%;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+.carousel-captiong .heading1 {
+    width: 100%;
+    margin: 0%;
+    padding: 0;
+}
+
+.filter-container {
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+}
+
+.filter-container {
+    gap: 5px;
+    /* padding: 15px; */
+    margin-bottom: 0px;
+    background-color: white;
+}
+
+.filter-container input {
+    width: 100%;
+    padding: 5px;
+}
+
+.filter-container .drpdn select {
+    border: none;
+    padding: 0px 0px 0px 0px;
+}
+
+.drpdn {
+    display: inline;
+}
+
+.filter-container.my-button {
+    position: relative;
+    bottom: 20px;
+    width: 100%;
+}
